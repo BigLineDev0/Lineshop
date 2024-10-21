@@ -98,7 +98,7 @@ class AdminController extends Controller
         if ($user) {
             return redirect()->route('admin.index')->with('success', 'Admins mis à jour avec succès.');
         } else {
-            return redirect()->route('admin.index')->with('error', 'Echec de la modification.');
+            return redirect()->route('admin.index')->with('error', 'Echec de la mise à jour.');
         } 
     }
 
